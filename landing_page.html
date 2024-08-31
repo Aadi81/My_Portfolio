@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce(Aadi)</title>
+     <link rel="stylesheet" href="landing_design.css">
+ <!--favicons-->
+ <link rel="icon" type="image/png" sizes="180x180" href="webdev/apple-touch-icon.png">
+ 
+
+    <!--font awsm cdn link-->    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+<!--fonts garmens-->    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                       
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Akronim&family=Aladin&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Rubik+Glitch+Pop&display=swap" rel="stylesheet">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Sixtyfour&display=swap" rel="stylesheet">
+</head>
+
+
+
+<!--some pseudo elements-->
+<style>
+  input:focus{
+     box-shadow: 0px 0px 5px 2px white;
+  }
+</style>
+
+
+
+
+<body>
+
+<div id="home">
+  <header  class="navbar1" > 
+
+    <div class="nav-name" style="cursor: pointer; text-shadow:0px 0px 20px rgba(255, 255, 255, 0.943) ; color: rgb(255, 255, 255);">
+       Aadi Gar-men's
+    </div>
+
+            <a href="#home">
+             <div class="nav-item" >
+              <i class="fa fa-house icon-hover"></i>
+              Home
+             </div>
+            </a>
+    
+            <a href="#shop" >
+             <div class="nav-item" >
+        <i class="fa fa-bag-shopping icon-hover"></i>
+        Store
+             </div>
+            </a> 
+ 
+            <a href="">
+              <div class="nav-item">
+        <i class="fa fa-cart-shopping icon-hover"  ></i>
+      Cart
+              </div>
+            </a>
+
+            <a href="#about">
+             <div class="nav-item">
+      <i class="fa fa-circle-info icon-hover"></i>
+      About
+             </div>
+            </a>
+
+            <a href="#contact"> 
+             <div class="nav-item">
+      <i class="fa fa-phone icon-hover"></i>
+    Contact
+             </div>
+            </a>
+
+    <div  style=" display:flex; background-color: rgba(0, 0, 0, 0); border: none; margin:25px; justify-content:center; " >
+            <input type="search"  placeholder="search your category" style="font-size: 15px; width: 300px; height: 25px; padding-left: 10px;border-radius: 20%; color: rgb(0, 0, 0); border: none;  ">
+      <button type="button"   
+        style="background-color: rgba(0, 0, 0, 0); border: none; cursor: pointer; ">    
+        <i class="fa-solid fa-magnifying-glass"  style="align-self: center;  font-size: 20px; margin-left: 5px; color: rgb(255, 255, 255); background-color:rgba(0, 0, 0, 0)"></i>
+      </button>
+    </div>
+  
+  
+  </header>
+
+
+
+
+
+ <!--navigation bar-->   
+ <div class="gradient">
+  <div class="navbar2" >
+
+   <div id="font-main">
+         <div class="font" style="text-shadow: 5px 0px 8px rgb(255, 255, 255);color: rgb(0, 0, 0); font-size:30px ; font-family: Playwrite ES Deco, cursive ; font-weight:200px ; font-optical-sizing: auto; font-style: normal; line-height: 100px;">
+          Men's Cloths</div>
+         <div class="font" style="margin-top: 30px; font-size:80px ; font-family:Aladin, system-ui; ; font-weight:400px ; font-optical-sizing: auto; font-style: normal; ">
+          Create your</div>
+        <div class="font" style="text-decoration: underline; text-shadow: 5px 0px 10px rgba(255, 255, 255, 0.776);color: rgb(0, 140, 255);  margin-top: 85px; font-size:180px ; font-family:Aladin, system-ui;; font-weight:400px ; font-optical-sizing: auto; font-style: normal; line-height: 10px;">
+          Individuality</div>
+         
+       <div class="nav-item" style="margin: 140px 80px; font-weight: bold;  width: max-content; line-height: 45px; font-size: 25; background-color: rgba(0, 0, 0, 0);">
+          <span class="nav-item" style="border: 1px solid white;" >
+                 Login  
+          </span>
+          <span  class="nav-item"  style="border: 1px solid white;">
+            Sign up 
+          </span>
+        </div>  
+
+
+
+    </div>
+ 
+  </div>
+
+   
+
+ </div>
+
+
+ <!--strip making-->
+ <div class="strip">
+  <div class="strip-content ">
+      <div class="strip-text" style="font-size:75px ;color:gold ;text-shadow: 0px 0px 8px white; font-style: italic; font-weight: bold; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+        Buy 1 get 2</div> 
+       <span class="strip-text" style="font-size:50px ; ">
+         summer offer 
+         <span class="strip-text" style="color: red; font-weight:bold; font-size: 65px;">70%</span> 
+         discount
+       </span>
+      <div class="strip-text" style="font-size:50px ;"> 
+       <span class="strip-text" style="text-decoration: underline;">On every t-Shirt
+       </span> 
+      </div> 
+  </div>
+ </div>
+
+
+ <hr id="shop" style="border: none;">
+
+                  
+ <!--content part--> 
+      <div  class="content-bar"> 
+                   <h1  class="content-title">Store</h1>
+                           <h2  >Men's Blazer's</h2>
+                          <hr style="margin-left: 5px; margin-top: -30px; margin-bottom: 30px; width: 250px ; border-bottom: 5px solid rgba(61, 61, 61, 0.516); ">
+            <div class="content-border"> 
+             
+              <div class="content-items" > 
+                <img src="https://img.freepik.com/free-psd/realistic-suit-illustration_23-2151236757.jpg?uid=R154921817&ga=GA1.1.2055374172.1720250269"  class="image">           
+               
+                <h3 >denim shirts</h3>
+               
+                <div style="display: flex;  background-color: rgba(238, 130, 238, 0);">
+                 
+                    <p style="text-align: left; margin-left: 10px; font-size: 18px;">Rs-1236</p>
+                  
+                  <span style="margin-left: 90px; background: none; margin-top: 10px;" >
+                    <i class="fa fa-star stars" ></i>
+                    <i class="fa fa-star stars" ></i>
+                    <i class="fa fa-star stars" ></i>
+                    <i class="fa fa-star stars" ></i>
+                    <i class="fa fa-star stars" ></i>
+                  </span>
+                  </div>
+               
+                <button >Add to cart 
+                  <i class="fa fa-cart-shopping pic-cart"></i>
+                </button>
+              </div>
+
+
+              <div class="content-items" > 
+                <img src="https://img.freepik.com/free-psd/realistic-suit-illustration_23-2151236768.jpg?uid=R154921817&ga=GA1.1.2055374172.1720250269" class="image">           
+                <h3>denim shirts</h3> 
+               
+                <div style="display: flex;  background-color: rgba(238, 130, 238, 0);">
+                  <p style="text-align: left; margin-left: 10px; font-size: 18px;">Rs-1236</p>
+                    
+                  <span style="margin-left: 90px; background: none;text-align: right; margin-top: 10px;" >
+                   
+                    <i class="fa fa-star stars" ></i>
+                    <i class="fa fa-star stars" ></i>
+                    <i class="fa fa-star stars" ></i>
+                    <i class="fa fa-star-half-stroke stars" ></i>
+                  </span>
+                 </div>
+               
+                <button >Add to cart 
+                  <i class="fa fa-cart-shopping pic-cart"></i>
+                </button>
+              </div>
+                     
+          <div class="content-items" > 
+                <img src="https://img.freepik.com/premium-photo/black-tuxedo-isolated-white-background_787273-8268.jpg?uid=R154921817&ga=GA1.1.2055374172.1720250269" class="image">           
+                <h3>denim shirts</h3>
+
+               <div style="display: flex;  background-color: rgba(238, 130, 238, 0);">
+                <p style="text-align: left; margin-left: 10px; font-size: 18px;">Rs-1236</p>
+                  
+                <span style="margin-left: 90px; background: none; margin-top: 10px;" >
+                  <i class="fa fa-star stars" ></i>
+                  <i class="fa fa-star stars" ></i>
+                  <i class="fa fa-star stars" ></i>
+                  <i class="fa fa-star stars" ></i>
+                  
+                </span>
+               </div>
+             
+              <button >Add to cart 
+                <i class="fa fa-cart-shopping pic-cart"></i>
+              </button>
+          </div>
+                       
+                     
+              <div class="content-items" > 
+                <img src="https://img.freepik.com/premium-photo/design-suit-polyester-slim-fit-design-style-men-all-ages-tailor-isolated-white-bg-blank_655090-1534903.jpg?uid=R154921817&ga=GA1.1.2055374172.1720250269" class="image">           
+                <h3>denim shirts</h3>
+                
+               <div style="display: flex;  background-color: rgba(238, 130, 238, 0);">
+                <p style="text-align: left; margin-left: 10px; font-size: 18px;">Rs-1236</p>
+                  
+                <span style="margin-left: 90px; background: none; margin-top: 10px;" >
+                  <i class="fa fa-star stars" ></i>
+                  <i class="fa fa-star stars" ></i>
+                  <i class="fa fa-star stars" ></i>
+                  <i class="fa fa-star stars" ></i>
+                  
+                </span>
+               </div>
+             
+              <button >Add to cart 
+                <i class="fa fa-cart-shopping pic-cart"></i>
+              </button>
+              </div>
+
+              <div class="content-items" > 
+                <img src="https://img.freepik.com/premium-photo/showcasing-professional-clothing-with-style-sophistication-isolation-clean-background_1020495-69910.jpg?uid=R154921817&ga=GA1.1.2055374172.1720250269" class="image">           
+                <h3>denim shirts</h3>
+              
+               <div style="display: flex;  background-color: rgba(238, 130, 238, 0);">
+                <p style="text-align: left; margin-left: 10px; font-size: 18px;">Rs-1236</p>
+                  
+                <span style="margin-left: 90px; background: none; margin-top: 10px;" >
+                  <i class="fa fa-star stars" ></i>
+                  <i class="fa fa-star stars" ></i>
+                  <i class="fa fa-star stars" ></i>
+                  <i class="fa fa-star stars" ></i>
+                  
+                </span>
+               </div>
+             
+              <button >Add to cart 
+                <i class="fa fa-cart-shopping pic-cart"></i>
+              </button>  
+              </div>
+
+              <div class="content-items" > 
+                <img src="https://img.freepik.com/premium-photo/showcasing-professional-clothing-with-style-sophistication-isolation-clean-background_1020495-188531.jpg?uid=R154921817&ga=GA1.1.2055374172.1720250269" class="image">           
+                <h3>denim shirts</h3>
+              
+               <div style="display: flex;  background-color: rgba(238, 130, 238, 0);">
+                <p style="text-align: left; margin-left: 10px; font-size: 18px;">Rs-1236</p>
+                  
+                <span style="margin-left: 90px; background: none; margin-top: 10px;" >
+                  <i class="fa fa-star stars" ></i>
+                  <i class="fa fa-star stars" ></i>
+                  <i class="fa fa-star stars" ></i>
+                  <i class="fa fa-star stars" ></i>
+                  
+                </span>
+               </div>
+             
+              <button >Add to cart 
+                <i class="fa fa-cart-shopping pic-cart"></i>
+              </button>  
+              </div>
+
+              <div class="content-items" > 
+                <img src="https://img.freepik.com/premium-photo/single-coloured-jacket-product-demonstration-white-background-v-6-job-id-0b30a5600224407ea701da3e764e1204_1134901-76088.jpg?uid=R154921817&ga=GA1.1.2055374172.1720250269" class="image">           
+                <h3>denim shirts</h3>
+              
+               <div style="display: flex;  background-color: rgba(238, 130, 238, 0);">
+                <p style="text-align: left; margin-left: 10px; font-size: 18px;">Rs-1236</p>
+                  
+                <span style="margin-left: 90px; background: none; margin-top: 10px;" >
+                  <i class="fa fa-star stars" ></i>
+                  <i class="fa fa-star stars" ></i>
+                  <i class="fa fa-star stars" ></i>
+                  <i class="fa fa-star stars" ></i>
+                  
+                </span>
+               </div>
+             
+              <button >Add to cart 
+                <i class="fa fa-cart-shopping pic-cart"></i>
+              </button>  
+              </div>
+
+              <div class="content-items" > 
+                <img src="https://img.freepik.com/premium-photo/hd-digital-art-wallpaper-background_783884-120365.jpg?uid=R154921817&ga=GA1.1.2055374172.1720250269" class="image">           
+                <h3>denim shirts</h3>
+              
+               <div style="display: flex;  background-color: rgba(238, 130, 238, 0);">
+                <p style="text-align: left; margin-left: 10px; font-size: 18px;">Rs-1236</p>
+                  
+                <span style="margin-left: 90px; background: none; margin-top: 10px;" >
+                  <i class="fa fa-star stars" ></i>
+                  <i class="fa fa-star stars" ></i>
+                  <i class="fa fa-star stars" ></i>
+                  <i class="fa fa-star stars" ></i>
+                  
+                </span>
+               </div>
+             
+              <button >Add to cart 
+                <i class="fa fa-cart-shopping pic-cart"></i>
+              </button>  
+              </div>
+        </div>
+        <div style="background: none; text-align: center; margin-top: 20px;">
+          <button class="submit" type="submit">See more..</button>
+        </div>
+      </div>
+      <hr style="margin-top: 200px; margin-bottom: 30px; margin-left: 9.5%; width: 80% ; border-bottom: 1px solid rgba(0, 0, 0, 0.516); ">
+
+
+      <div class="content-bar"> 
+                  <h2>Men's Casual Shirts</h2>
+                  <hr style="margin-left: 5px; margin-top: -30px; margin-bottom: 30px; width: 250px ; border-bottom: 5px solid rgba(128, 128, 128, 0.516); ">
+          <div class="content-border"> 
+ 
+                 <div class="content-items" > 
+    <img src="https://img.freepik.com/free-photo/casual-young-man-posing_144627-29194.jpg?uid=R154921817&ga=GA1.1.2055374172.1720250269"  class="image">           
+    <h3>denim shirts</h3>
+    <div style="display: flex;  background-color: rgba(238, 130, 238, 0);">
+      <p style="text-align: left; margin-left: 10px; font-size: 18px;">Rs-1236</p>
+        
+      <span style="margin-left: 90px; background: none; margin-top: 10px;" >
+        <i class="fa fa-star stars" ></i>
+        <i class="fa fa-star stars" ></i>
+        <i class="fa fa-star stars" ></i>
+        <i class="fa fa-star stars" ></i>
+        
+      </span>
+     </div>
+   
+    <button >Add to cart 
+      <i class="fa fa-cart-shopping pic-cart"></i>
+    </button>  
+               </div>
+
+
+                 <div class="content-items" > 
+    <img src="https://img.freepik.com/free-photo/handsome-guy-shirt_144627-3174.jpg?uid=R154921817&ga=GA1.1.2055374172.1720250269" class="image">           
+    <h3>denim shirts</h3>
+    <div style="display: flex;  background-color: rgba(238, 130, 238, 0);">
+      <p style="text-align: left; margin-left: 10px; font-size: 18px;">Rs-1236</p>
+        
+      <span style="margin-left: 90px; background: none; margin-top: 10px;" >
+        <i class="fa fa-star stars" ></i>
+        <i class="fa fa-star stars" ></i>
+        <i class="fa fa-star stars" ></i>
+        <i class="fa fa-star stars" ></i>
+        
+      </span>
+     </div>
+   
+    <button >Add to cart 
+      <i class="fa fa-cart-shopping pic-cart"></i>
+    </button>  
+             </div>
+         
+                 <div class="content-items" > 
+    <img src="https://img.freepik.com/premium-photo/lifes-too-short-smile-studio-portrait-handsome-young-man-standing-against-white-background_590464-29315.jpg?uid=R154921817&ga=GA1.1.2055374172.1720250269" class="image">           
+    <h3>denim shirts</h3>
+    <div style="display: flex;  background-color: rgba(238, 130, 238, 0);">
+      <p style="text-align: left; margin-left: 10px; font-size: 18px;">Rs-1236</p>
+        
+      <span style="margin-left: 90px; background: none; margin-top: 10px;" >
+        <i class="fa fa-star stars" ></i>
+        <i class="fa fa-star stars" ></i>
+        <i class="fa fa-star stars" ></i>
+        <i class="fa fa-star stars" ></i>
+        
+      </span>
+     </div>
+   
+    <button >Add to cart 
+      <i class="fa fa-cart-shopping pic-cart"></i>
+    </button>  
+            </div>
+           
+         
+                 <div class="content-items" > 
+    <img src="https://img.freepik.com/premium-photo/simple-casual-clothes-feeling-comfortable-country-music-concept-country-style-man-wear-checkered-shirt-rustic-country-attractive-guy-sexy-people-youth-fashion-fashionable-outfit_474717-5823.jpg?uid=R154921817&ga=GA1.1.2055374172.1720250269" class="image">           
+    <h3>denim shirts</h3>
+    <div style="display: flex;  background-color: rgba(238, 130, 238, 0);">
+      <p style="text-align: left; margin-left: 10px; font-size: 18px;">Rs-1236</p>
+        
+      <span style="margin-left: 90px; background: none; margin-top: 10px;" >
+        <i class="fa fa-star stars" ></i>
+        <i class="fa fa-star stars" ></i>
+        <i class="fa fa-star stars" ></i>
+        <i class="fa fa-star stars" ></i>
+        
+      </span>
+     </div>
+   
+    <button >Add to cart 
+      <i class="fa fa-cart-shopping pic-cart"></i>
+    </button>  
+              </div>
+
+                 <div class="content-items" > 
+    <img src="https://img.freepik.com/premium-photo/man-isolated-white_93675-71920.jpg?uid=R154921817&ga=GA1.1.2055374172.1720250269" class="image">           
+    <h3>denim shirts</h3>
+    <div style="display: flex;  background-color: rgba(238, 130, 238, 0);">
+      <p style="text-align: left; margin-left: 10px; font-size: 18px;">Rs-1236</p>
+        
+      <span style="margin-left: 90px; background: none; margin-top: 10px;" >
+        <i class="fa fa-star stars" ></i>
+        <i class="fa fa-star stars" ></i>
+        <i class="fa fa-star stars" ></i>
+        <i class="fa fa-star stars" ></i>
+        
+      </span>
+     </div>
+   
+    <button >Add to cart 
+      <i class="fa fa-cart-shopping pic-cart"></i>
+    </button>  
+  </div>
+
+                 <div class="content-items" > 
+    <img src="https://img.freepik.com/premium-photo/portrait-young-man-standing-against-white-background_1048944-29875625.jpg?uid=R154921817&ga=GA1.1.2055374172.1720250269" class="image">           
+    <h3>denim shirts</h3>
+    <div style="display: flex;  background-color: rgba(238, 130, 238, 0);">
+      <p style="text-align: left; margin-left: 10px; font-size: 18px;">Rs-1236</p>
+        
+      <span style="margin-left: 90px; background: none; margin-top: 10px;" >
+        <i class="fa fa-star stars" ></i>
+        <i class="fa fa-star stars" ></i>
+        <i class="fa fa-star stars" ></i>
+        <i class="fa fa-star stars" ></i>
+        
+      </span>
+     </div>
+   
+    <button >Add to cart 
+      <i class="fa fa-cart-shopping pic-cart"></i>
+    </button>  
+          </div>
+
+                 <div class="content-items" > 
+    <img src="https://img.freepik.com/premium-photo/young-happy-african-man-smiling-while-thinking-posing_251136-39682.jpg?uid=R154921817&ga=GA1.1.2055374172.1720250269" class="image">           
+    <h3>denim shirts</h3>
+    <div style="display: flex;  background-color: rgba(238, 130, 238, 0);">
+      <p style="text-align: left; margin-left: 10px; font-size: 18px;">Rs-1236</p>
+        
+      <span style="margin-left: 90px; background: none; margin-top: 10px;" >
+        <i class="fa fa-star stars" ></i>
+        <i class="fa fa-star stars" ></i>
+        <i class="fa fa-star stars" ></i>
+        <i class="fa fa-star stars" ></i>
+        
+      </span>
+     </div>
+   
+    <button >Add to cart 
+      <i class="fa fa-cart-shopping pic-cart"></i>
+    </button>  
+        </div>
+
+                 <div class="content-items" > 
+    <img src="https://img.freepik.com/free-photo/happy-man-with-raised-thumb_1187-1931.jpg?uid=R154921817&ga=GA1.1.2055374172.1720250269" class="image">           
+    <h3>denim shirts</h3>
+    <div style="display: flex;  background-color: rgba(238, 130, 238, 0);">
+      <p style="text-align: left; margin-left: 10px; font-size: 18px;">Rs-1236</p>
+        
+      <span style="margin-left: 90px; background: none; margin-top: 10px;" >
+        <i class="fa fa-star stars" ></i>
+        <i class="fa fa-star stars" ></i>
+        <i class="fa fa-star stars" ></i>
+        <i class="fa fa-star stars" ></i>
+        
+      </span>
+     </div>
+   
+    <button >Add to cart 
+      <i class="fa fa-cart-shopping pic-cart"></i>
+    </button>  
+         </div>
+ 
+
+          </div>
+          <div style="background: none; text-align: center; margin-top: 20px;">
+            <button class="submit" type="submit">See more..</button>
+          </div>
+      </div>  
+
+  <hr style="margin-top: 80px; margin-bottom: 30px; margin-left: 9.5%; width: 80% ; border-bottom: 1px solid rgba(0, 0, 0, 0.516); ">
+
+      <div class="content-bar"> 
+                  <h2>Men's Jeans</h2>
+                  <hr style="margin-left: 5px; margin-top: -30px; margin-bottom: 30px; width: 250px ; border-bottom: 5px solid rgba(128, 128, 128, 0.516); ">
+          <div class="content-border"> 
+ 
+                 <div class="content-items" > 
+    <img src="https://img.freepik.com/free-photo/comfortable-jogger-pants-gray-studio-apparel_53876-102269.jpg?uid=R154921817&ga=GA1.1.2055374172.1720250269"  class="image">           
+    <h3>denim shirts</h3>
+    <div style="display: flex;  background-color: rgba(238, 130, 238, 0);">
+      <p style="text-align: left; margin-left: 10px; font-size: 18px;">Rs-1236</p>
+        
+      <span style="margin-left: 90px; background: none; margin-top: 10px;" >
+        <i class="fa fa-star stars" ></i>
+        <i class="fa fa-star stars" ></i>
+        <i class="fa fa-star stars" ></i>
+        <i class="fa fa-star stars" ></i>
+        
+      </span>
+     </div>
+   
+    <button >Add to cart 
+      <i class="fa fa-cart-shopping pic-cart"></i>
+    </button>  
+            </div>
+
+
+                 <div class="content-items" > 
+    <img src="https://img.freepik.com/free-photo/businessman-wearing-black-pants-with-white-shirt_53876-102237.jpg?uid=R154921817&ga=GA1.1.2055374172.1720250269" class="image">           
+    <h3>denim shirts</h3>
+    <div style="display: flex;  background-color: rgba(238, 130, 238, 0);">
+      <p style="text-align: left; margin-left: 10px; font-size: 18px;">Rs-1236</p>
+        
+      <span style="margin-left: 90px; background: none; margin-top: 10px;" >
+        <i class="fa fa-star stars" ></i>
+        <i class="fa fa-star stars" ></i>
+        <i class="fa fa-star stars" ></i>
+        <i class="fa fa-star stars" ></i>
+        
+      </span>
+     </div>
+   
+    <button >Add to cart 
+      <i class="fa fa-cart-shopping pic-cart"></i>
+    </button>  
+           </div>
+         
+                 <div class="content-items" > 
+    <img src="https://img.freepik.com/premium-photo/male-legs-isolated-white_392895-144899.jpg?uid=R154921817&ga=GA1.1.2055374172.1720250269" class="image">           
+    <h3>denim shirts</h3>
+    <div style="display: flex;  background-color: rgba(238, 130, 238, 0);">
+      <p style="text-align: left; margin-left: 10px; font-size: 18px;">Rs-1236</p>
+        
+      <span style="margin-left: 90px; background: none; margin-top: 10px;" >
+        <i class="fa fa-star stars" ></i>
+        <i class="fa fa-star stars" ></i>
+        <i class="fa fa-star stars" ></i>
+        <i class="fa fa-star stars" ></i>
+        
+      </span>
+     </div>
+   
+    <button >Add to cart 
+      <i class="fa fa-cart-shopping pic-cart"></i>
+    </button>  
+             </div>
+           
+         
+                 <div class="content-items" > 
+    <img src="https://img.freepik.com/premium-photo/fashion-clothes-closeup_1122-6388.jpg?uid=R154921817&ga=GA1.1.2055374172.1720250269" class="image">           
+    <h3>denim shirts</h3>
+    <div style="display: flex;  background-color: rgba(238, 130, 238, 0);">
+      <p style="text-align: left; margin-left: 10px; font-size: 18px;">Rs-1236</p>
+        
+      <span style="margin-left: 90px; background: none; margin-top: 10px;" >
+        <i class="fa fa-star stars" ></i>
+        <i class="fa fa-star stars" ></i>
+        <i class="fa fa-star stars" ></i>
+        <i class="fa fa-star stars" ></i>
+        
+      </span>
+     </div>
+   
+    <button >Add to cart 
+      <i class="fa fa-cart-shopping pic-cart"></i>
+    </button>  
+           </div>
+
+                 <div class="content-items" > 
+    <img src="https://img.freepik.com/premium-photo/brown-cargo-pants-isolated-white-background_259229-1132.jpg?uid=R154921817&ga=GA1.1.2055374172.1720250269" class="image">           
+    <h3>denim shirts</h3>
+    <div style="display: flex;  background-color: rgba(238, 130, 238, 0);">
+      <p style="text-align: left; margin-left: 10px; font-size: 18px;">Rs-1236</p>
+        
+      <span style="margin-left: 90px; background: none; margin-top: 10px;" >
+        <i class="fa fa-star stars" ></i>
+        <i class="fa fa-star stars" ></i>
+        <i class="fa fa-star stars" ></i>
+        <i class="fa fa-star stars" ></i>
+        
+      </span>
+     </div>
+   
+    <button >Add to cart 
+      <i class="fa fa-cart-shopping pic-cart"></i>
+    </button>  
+            </div>
+
+                 <div class="content-items" > 
+    <img src="https://img.freepik.com/premium-photo/male-legs-isolated-white_392895-144899.jpg?uid=R154921817&ga=GA1.1.2055374172.1720250269" class="image">           
+    <h3>denim shirts</h3>
+    <div style="display: flex;  background-color: rgba(238, 130, 238, 0);">
+      <p style="text-align: left; margin-left: 10px; font-size: 18px;">Rs-1236</p>
+        
+      <span style="margin-left: 90px; background: none; margin-top: 10px;" >
+        <i class="fa fa-star - stars" ></i>
+        <i class="fa fa-star -  stars" ></i>
+        <i class="fa fa-star  - stars" ></i>
+        <i class="fa fa-star  - stars" ></i>
+        
+      </span>
+     </div>
+   
+    <button >Add to cart 
+      <i class="fa fa-cart-shopping - pic-cart"></i>
+    </button>  
+           </div>
+
+                 <div class="content-items" > 
+    <img src="https://img.freepik.com/premium-photo/slim-fit-jeans-black-grey-color-ghost-mannequin-concept-isolated-white-background_262099-4883.jpg?uid=R154921817&ga=GA1.1.2055374172.1720250269" class="image">           
+    <h3>denim shirts</h3>
+    <div style="display: flex;  background-color: rgba(238, 130, 238, 0);">
+      <p style="text-align: left; margin-left: 10px; font-size: 18px;">Rs-1236</p>
+        
+      <span style="margin-left: 90px; background: none; margin-top: 10px;" >
+        <i class="fa fa-star stars" ></i>
+        <i class="fa fa-star stars" ></i>
+        <i class="fa fa-star stars" ></i>
+        <i class="fa fa-star stars" ></i>
+        
+      </span>
+     </div>
+   
+    <button >Add to cart 
+      <i class="fa fa-cart-shopping pic-cart"></i>
+    </button>  
+             </div>
+
+                 <div class="content-items" > 
+    <img src="https://img.freepik.com/premium-photo/student-asian-boy-with-long-pants-white-background_891936-926.jpg?uid=R154921817&ga=GA1.1.2055374172.1720250269" class="image">           
+    <h3>denim shirts</h3>
+    <div style="display: flex;  background-color: rgba(238, 130, 238, 0);">
+      <p style="text-align: left; margin-left: 10px; font-size: 18px;">Rs-1236</p>
+        
+      <span style="margin-left: 90px; background: none; margin-top: 10px;" >
+        <i class="fa fa-star stars" ></i>
+        <i class="fa fa-star stars" ></i>
+        <i class="fa fa-star stars" ></i>
+        <i class="fa fa-star stars" ></i>
+        
+      </span>
+     </div>
+   
+    <button >Add to cart 
+      <i class="fa fa-cart-shopping pic-cart"></i>
+    </button>  
+           </div>
+ 
+
+          </div>
+          <div style="background: none; text-align: center; margin-top: 20px;">
+                <button class="submit" type="submit">See more..</button>
+              </div>
+      </div>  
+   <hr style="margin-top: 100px; border: none;">
+
+
+   <!--strip making-->
+    <div class="strip2">
+     <div class="strip-content ">
+         <div class="strip-text" style="font-size:75px ;font-style: italic; font-weight: bold; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+          Get voucher's
+        </div> 
+          <span class="strip-text" style="font-size:50px ; ">
+            Upto 
+            <span class="strip-text" style="color: rgb(255, 0, 0); font-weight:bold;text-decoration: underline; font-size: 75px;">
+             Rs.1000
+            </span> 
+            
+          </span>
+
+        <div class="strip-text" style="font-size:50px ;"> 
+          <span class="strip-text" style="text-decoration: underline;">
+            On every 
+          </span>  
+             <span class="strip-text" style="color: rgb(0, 255, 26); text-decoration:underline; font-weight:bold; font-size: 55px;">
+              Rs.500
+             </span>  
+                <span class="strip-text" style="text-decoration: underline;"> 
+                 shopping
+                </span> 
+           
+        </div> 
+     </div>
+   </div>
+
+
+
+<!--About section-->    
+  <hr id="about">
+
+
+  <div class="content-title">About </div>
+   <br><br>
+  <div class="about-section">
+    
+    <div class="about-items">
+      <i class="fa fa-truck-fast - about-icons">
+        <h2 class="h2-about">Delivery</h2>
+      </i>
+        <br>
+         Lorem ipsum, dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis aliquid molestias adipisci molestiae inventore! Ullam facilis sed est ducimus cupiditate ea, dolores ipsum consequatur quae excepturi qui nostrum esse deserunt!
+         Illum, numquam officiis tempora inventore fugiat magnam dolorum sit aliquid modi nulla quaerat quasi iusto ducimus non molestiae saepe dolore dolorem adipisci aspernatur consequatur fuga porro nobis odio? Iure, veritatis.
+         Recusandae reprehenderit, iure nulla atque nemo optio quia, necessitatibus quaerat, inventore voluptates quisquam libero dolorum vero neque. Commodi ratione temporibus ipsum assumenda iste delectus deleniti. Voluptate veritatis asperiores facilis pariatur.
+         Facere, id. Ex quas illum rerum atque nostrum voluptatibus, sunt sapiente fugiat assumenda at eveniet repellat accusamus earum labore tempora ad corrupti molestias tempore inventore, totam commodi possimus harum odit.
+         Enim eius, aliquid deleniti consequuntur doloremque ex, nulla corrupti laudantium nam nisi at aperiam consectetur eum sit ea cumque deserunt soluta odit sint ipsum! Deleniti ad dolores voluptatum ut soluta! consectetur adipisicing elit. Placeat esse aliquam non, aperiam praesentium minus rem corrupti ullam consequatur, veritatis ut. Placeat officia id ullam minus fugiat expedita distinctio vero.
+    </div>
+   
+   
+    <div class="about-items">
+      
+        <i class="fa fa-shop - about-icons" >
+          <h2 class="h2-about">Shops</h2>
+        </i>
+     <br>
+    
+      Lorem ipsum, dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, reiciendis! Impedit necessitatibus quas possimus voluptas ipsa temporibus, placeat quis aperiam pariatur earum voluptatibus distinctio accusantium suscipit inventore id natus enim!
+      Quos optio et adipisci harum accusantium dolor repudiandae nostrum, saepe eos laboriosam accusamus consequatur. Quaerat quis quae perspiciatis fugiat praesentium nemo pariatur earum natus, officia accusamus molestias labore illo magni.
+      Quisquam, culpa, ab accusamus voluptates magnam asperiores velit porro molestiae quae officia aliquam ipsam ducimus ipsa quos, dignissimos reprehenderit tenetur nam. Vero minus, dolorem temporibus quidem veritatis labore iure quasi?
+      Quisquam alias dicta obcaecati tempora aperiam, nostrum eum, dolore odio esse reprehenderit deserunt impedit nesciunt quos necessitatibus! Aliquam ab nisi ullam ipsam inventore voluptatum sunt quaerat architecto perspiciatis. Dolores, voluptatibus?
+      Ab, atque asperiores. Labore qui nemo aspernatur consequatur molestiae eos laboriosam? Aut quos recusandae perspiciatis, perferendis nesciunt tenetur voluptatibus dolores eum, porro sapiente voluptas fugit esse laboriosam dolorem odit ullam. sit amet consectetur adipisicing elit. Placeat esse aliquam non, aperiam praesentium minus rem corrupti ullam consequatur, veritatis ut. Placeat officia id ullam minus fugiat expedita distinctio vero.
+    </div>
+
+
+
+    <div class="about-items">
+      
+      <i class="fa fa-globe - about-icons">
+        <h2 class="h2-about">Global</h2>
+      </i>
+      <br>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat esse aliquam non, aperiam praesentium minus rem corrupti ullam consequatur, Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi in eaque nulla quisquam dolore minus quibusdam, vitae, ratione quod magni voluptatem, optio corporis veniam. Inventore ipsam ex sequi mollitia facilis.
+      Cupiditate ea blanditiis vel reprehenderit fugit quasi totam provident? Porro explicabo cupiditate provident velit animi et, quia a cumque atque asperiores, ea labore maxime delectus adipisci numquam fuga quidem laudantium.
+      Quaerat fugiat voluptas vitae officia in autem, perspiciatis ullam eligendi incidunt. Harum, adipisci. Laboriosam nam nobis reiciendis fugiat eligendi iure rem ea? Consectetur, quam libero? Obcaecati asperiores harum facere nisi!
+      Id facilis minus fugit ipsam quod temporibus molestias dicta sunt odio reiciendis vitae, rem suscipit totam nemo, illum earum amet corrupti fugiat quia asperiores repudiandae harum veniam tenetur. Inventore, quis.
+      Repudiandae, placeat aperiam! Maxime officiis soluta enim sapiente, natus, sequi rem voluptatibus dolore atque assumenda dolor facere impedit facilis perspiciatis odio voluptatum laudantium nulla? Culpa accusantium velit harum obcaecati excepturi. veritatis ut. Placeat officia id ullam minus fugiat expedita distinctio vero.
+      
+    </div>
+  </div>
+
+  <hr style="border: none;" id="contact">
+
+<!--contact section-->
+  <div class="content-title">Contact </div>
+   <br><br>
+
+   
+      <div id="contact-items">
+    
+         <div style="display: flex; flex-direction: column; background:none;">  
+       
+       
+             <div style="background:none; font-size: 50px; width:500px ; padding: 30px; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; text-shadow: 0px 0px 15px rgb(255, 0, 200);" >
+               Mail us  <i class="fa fa-envelopes-bulk" style="background: none;"></i>
+              </div>  
+            <div style="display: flex; background: none; margin-left: 150px; line-height: 60px; ">
+           
+           
+            <div style="background: none;font-size: 20px; text-align: right;">
+              <form style="background: none;">
+                <label style="background: none;">E-mail Id : </label>
+               
+                 <br>
+
+                 <label style="background: none; margin-left: -1px;" >Name :</label>
+                 
+                
+               </form>
+            </div>
+
+
+            <div style="background: none;" >
+              <form style="background: none;"> 
+              <input type="email" placeholder="Enter your email-ID" class="input-about">
+                 <br>
+              <input type="text" placeholder="Enter full-name" class="input-about" >
+                  <br>
+              <textarea rows="3" cols="34"  placeholder="Message me" style="margin-left: 12px; padding: 10px; "></textarea>
+                <br> <button  type="submit" style="margin-left: 10px; margin-top: px; border:1px solid black ; color: black; font-size: 15px;padding: 15px;" class="nav-item">
+                  Send
+               </button>
+              </form>
+            </div>
+             
+            </div>
+            
+            
+         </div> 
+ 
+         <div style="background: none;">
+           <hr style="width: 0.1px; height: 350px; background-color: rgb(255, 255, 255); margin-top: 40px; margin-left: -15px;">
+         </div>
+
+         <div style="display: flex; flex-direction: column; background:none;">
+            
+          <div style="background: none; font-size: 30px; width:500px ; ">
+               Connect on  
+               <div style="background: none; font-size: 50px;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; text-shadow: 0px 0px 15px rgb(255, 0, 0);">
+                Social media
+              </div> 
+            </div>
+          <div style="background: none; margin-top: 30px;">
+
+            <div style="background: none;">
+            <a href="www.linkedin.com/in/aditya-asthana-a60305260" target="_blank"> 
+            <i id="ldn" class="fa-brands fa-linkedin - contact-icon"></i> 
+             <span id="ldn" class="contact-site"> 
+              www.linkedin.com/in/aditya-asthana-a60305260
+             </span>
+            </a> 
+           </div>
+
+            <div style="background: none;">
+             <a href="">
+              <i id="xtw" class="fa-brands fa-square-x-twitter - contact-icon"></i>
+              <span id="xtw" class="contact-site"> 
+                hgdfhuegfeghufvhjfbfhjbhbvhjfnadbfhjrwbfhufvb
+              </span>
+            </a>
+            </div>
+
+            <div  style="background: none;">
+             <a href=""> 
+             <i id="fb" class="fa-brands fa-square-facebook - contact-icon"></i>
+              <span id="fb" class="contact-site"> 
+                hgdfhuegfeghufvhjfbfhjbhbvhjfnadbfhjrwbfhufvb
+              </span>
+            </a>
+            </div>
+
+            <div style="background: none;">
+            <a href="">
+                <i id="insta" class="fa-brands fa-square-instagram - contact-icon"></i>
+              <span id="insta" class="contact-site"> 
+                hgdfhuegfeghufvhjfbfhjbhbvhjfnadbfhjrwbfhufvb
+              </span>
+            </a>
+            </div>
+
+          </div>  
+         </div>
+
+      </div>   
+   <hr style="border: none;">
+
+
+<footer style="margin-top:50px ; display: flex; flex-direction: row;justify-content: space-around; width: 100%; height: 350px; background-color: black;">
+ 
+  <div style="background: none;"> 
+  <div class="footer-items" >Global delivery <i class="fa fa-earth-americas" style="background: none; color: rgb(255, 255, 255);"></i></div> 
+  <ul class="footer-items-sub-parts"> 
+    <li>Partner 1</li>
+    <li>Partner 1</li>
+    <li>Partner 1</li>
+   
+  </ul>
+ </div> 
+ <div style="background: none;">
+  <div class="footer-items">Products & Manufacture <i class="fa fa-industry" style="background: none; color: rgb(255, 255, 255);"></i></div> 
+  <ul class="footer-items-sub-parts"> 
+    <li>Partner 1</li>
+    <li>Partner 1</li>
+    <li>Partner 1</li>
+    <li>Partner 1</li>
+    
+  </ul>
+ </div> 
+ <div style="background: none;">
+  <div class="footer-items">Country <i class="fa fa-globe " style="background: none; color: rgb(255, 255, 255);"></i></div> 
+  <ul class="footer-items-sub-parts"> 
+    <li>Partner 1</li>
+    <li>Partner 1</li>
+    <li>Partner 1</li>
+    <li>Partner 1</li>
+    <li>Partner 1</li>
+    <li>Partner 1</li>
+    <li>Partner 1</li>
+    <li>Partner 1</li>
+    <li>Partner 1</li>
+    <li>Partner 1</li>
+  </ul>
+ </div> 
+ <div style="background: none;">
+  <div class="footer-items">Our Patners <i class="fa fa-handshake" style="background: none; color: rgb(255, 255, 255);"></i></div> 
+  <ul class="footer-items-sub-parts"> 
+    <li>Partner 1</li>
+    <li>Partner 1</li>
+    <li>Partner 1</li>
+    <li>Partner 1</li>
+    <li>Partner 1</li>
+    <li>Partner 1</li>
+    <li>Partner 1</li>
+    <li>Partner 1</li>
+  </ul>
+ </div> 
+
+ <div style="background: none; display: flex; flex-direction: column;">
+  <div class="footer-items">Policy & Agreement <i class="fa fa-file-contract" style="background: none; color: rgb(255, 255, 255);"></i></div>  
+  <ul class="footer-items-sub-parts"> 
+    <li>Partner 1</li>
+    <li>Partner 1</li>
+    <li>Partner 1</li>
+    <li>Partner 1</li>
+    <li>Partner 1</li>
+   </ul>
+ <!--languge selection-->  
+  <div style="background: none; margin-top: 80px;margin-left: 90px;text-align: center;padding: 10px; border: 1px solid white; width: 145px; height: 25px;">
+    <i class="fa fa-language" style="background: none; color: white; font-size: 25px;"></i>
+    <select style="border: none;  font-size: 20px; margin-top: 4px; background-color: black; color: white;" name="selected_option" id="">
+      <option value="1">English</option>
+      <option value="2">Hindi</option>
+      <option value="3">Urdu</option>
+      <option value="4">Chinese</option>
+      <option value="5">Japanese</option>
+      <option value="6">French</option>
+      <option value="7">Russian</option>
+    </select>
+  </div>
+ </div> 
+
+</footer>
+
+<hr>
+<!--my name and copyright-->
+<footer style="background-color: black; width: 100%;height: 100px;">
+  <div style="text-align:center; font-size: 15px; background: none;line-height: 25px; ">
+    <pre style="background: none;padding: 10px; color: white; text-align: center;">Aadi Gar-men's <br>Desined by Aditya Asthana <br> <u style="background: none; color:white ;">copyright &copy; 2024, Terms & Conditions apply</u></pre> 
+</div>
+</footer>
+
+
+</div>
+  
+</body>
+</html>
