@@ -1,0 +1,119 @@
+*{  background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container{margin: 20px auto ;
+    height: 10%;
+    width: 80%;
+   
+   background-color: rgb(46, 23, 23);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.calculator{ 
+    margin: 50px ;
+    margin-bottom : 50px;
+    background-color : rgb(203, 203, 203);
+    padding: 20px;
+    border-radius: 10px;
+}
+.calculator form input{       /* button and overview */
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), 
+               -8px -8px 15px rgba(174, 174, 174, 0.347);
+    background:fixed rgb(96, 184, 202);
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(44, 23, 23);  
+    cursor: pointer;
+    margin: 10px;         
+}
+form .display{         /*display editing of calculator */
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0px;
+  
+}
+
+form .display input{       /*display text editing */
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+}
+
+form input.equal{
+    width: 145px;
+    color: red;
+}
+form input.differcolor{
+    color: rgb(255, 0, 0) ;
+}
+#hov:hover{
+    background-color: black;
+    color: whitesmoke;
+}
+
+.nav{ 
+    top: 0px;
+    margin: auto ;
+    padding-top: 20px;
+    padding-left: 20px;
+    position: sticky;
+    height: 90px;
+    width: 100%;
+    background-color: rgb(81, 11, 25);
+    border-bottom: 2px solid rgb(113, 105, 105);
+    color: antiquewhite;
+    font-size: 50px;
+    font-weight: bold;
+    
+    }
+
+
+    .bottom{ 
+        text-align: center;
+        bottom: 0px;
+        padding-top: 20px;
+        
+        position: relative;
+        height: 150px;
+        width: 100%;
+        background-color: rgb(86, 86, 86);
+        border-top: 2px solid rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        font-weight: bold;
+        }
+
+
+
+
+ .name{ 
+        display: inline;
+       margin-left: 10px;
+        background-color: rgb(81, 11, 25);
+        color: deepskyblue;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .heading{
+        margin: 20px 150px;
+        max-width: 100px;
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        font-weight: bold;
+      text-decoration: underline;
+      
+    }
+
