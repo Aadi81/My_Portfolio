@@ -1,6 +1,6 @@
 var typed = new Typed(".change", {
-    strings: ["Frontend Developer", "UI/UX Designer", 
-        "WordPress Developer", "Data Analyst", "Learner" ],
+    strings: ["Full-Stack Developer", "UI/UX Designer", 
+        "WordPress Developer", "Python Coder", "Learner" ],
     typeSpeed: 100,
     backSpeed: 50,
     backDelay:1000,
