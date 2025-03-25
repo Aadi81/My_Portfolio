@@ -464,7 +464,7 @@ label{
 .progress-line.django span{
     width: 40%;
 }
-.progress-line.java span{
+.progress-line.python span{
     width: 50%;
 }
 .progress-line.node span{
@@ -511,7 +511,7 @@ label{
 .progress-line.django span::after{
     content: "40%";
 }
-.progress-line.java span::after{
+.progress-line.python span::after{
     content: "50%";
 }
 .progress-line.node span::after{
