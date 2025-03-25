@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<link rel="stylesheet" href="Funky Games.css">
+
+
+<body>
+     <!-- Games -->
+ <div> 
+    <h1 style="text-align: center; font-size: 50px; font-family: cursive; text-decoration: underline; color: rgb(255, 28, 194); text-shadow: 5px 5px 5px rgb(255, 255, 255);
+    ">Funky games</h1> 
+    <!-- bat ball stump game -->
+   <div>
+     <h1 id="header">
+      1. Bat Ball Stump Game
+     </h1>
+     <div>
+      <input class="sBoard" type="text" id="display0" placeholder="Score Board" readonly>
+    </div>
+     <br>
+     <h2 id="header">Choose any one of them.</h2>
+
+
+   <div class="button-container">
+   <!-- 111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 -->
+     <button id="bat" onclick="
+
+   //comparing the value are same or not.
+    let ComChoice=cChoice();
+    let result; 
+    
+     if(ComChoice==='Ball'){
+       result=(`'You won'`);
+      Score.Win++;
+     }
+     else if(ComChoice==='Stump'){
+       result=(`'You Lose'`);
+      Score.Lost++;
+     }
+     else if(ComChoice==='Bat'){
+       result=(`'It's a tie.`);
+      Score.Tie++;
+     }
+
+     // this is a final result with in a one sentence.
+     let finalResult=(`'You have choosen Bat.' 'Computer choosen ${ComChoice}'`);
+     let resultMsg=(`Final result is  ${result}`);
+     let AllScore= board();
+   
+     // this is display, where result is display.
+     document.querySelector('#display').value=finalResult;
+     document.querySelector('#display2').value=resultMsg;
+     document.querySelector('#display0').value=AllScore;
+
+     ">
+
+       Bat <img src="cricket-bat-clipart-md.png" alt="">
+     </button>
+     <!-- 22222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222 -->
+   
+     <button id="ball" onclick="
+     
+    let ComChoice=cChoice();  
+    let result; 
+     if(ComChoice==='Ball'){
+       result=(`'It's a tie.'`);
+       Score.Tie++;
+     }
+     else if(ComChoice==='Stump'){
+       result=(`'You Won'`);
+       Score.Win++;
+     }
+     else if(ComChoice==='Bat'){
+       result=(`'You Lose'`);
+       Score.Lost++;
+     }
+     // this is a final result with in a one sentence.
+     let finalResult = (`'You have choosen Ball.' 'Computer choosen ${ComChoice}'`);
+     let resultMsg = (`Final result is  ${result}`);
+     let AllScore = board();
+     document.querySelector('#display2').value=resultMsg;
+     document.querySelector('#display').value=finalResult;
+     document.querySelector('#display0').value=AllScore;
+     ">
+       Ball <img src="Cricket_Ball_PNG_Clip_Art-1356.png" alt="">
+     </button>
+    
+   <!-- 333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333 -->
+    
+     <button id="stump" onclick="
+     let ComChoice=cChoice();
+     let result; 
+     if(ComChoice==='Ball'){
+       result=(`'You Lose'`);
+       Score.Lost++;
+     }
+     else if(ComChoice==='Stump'){
+       result=(`'It's a tie.`);
+       Score.Tie++;
+     }
+     else if(ComChoice==='Bat'){
+       result=(`'You won'`);
+       Score.Win++;
+     }
+     // this is a final result with in a one sentence.
+     let finalResult=(`'You have choosen Stump.' 'Computer choosen ${ComChoice}'`);
+     let resultMsg=(`Final result is  ${result}`);
+     let AllScore= board();
+     // this is display, where result is display.
+     document.querySelector('#display').value=finalResult;
+     document.querySelector('#display2').value=resultMsg;
+     document.querySelector('#display0').value=AllScore;
+     ">
+       Stump <img src="unnamed.png" alt="">
+     </button>
+   
+   </div>   
+   <h2 style="margin-left:15%;">Your result :-</h2>
+   <!-- Display screen -->
+        <div>
+          <input type="text" id="display" readonly>
+        </div>
+        <div>
+          <input type="text" id="display2" readonly>
+        </div>
+       
+       <button style="margin-left:45% ;" onclick="
+       scoreReset();
+       let Resetbtn=('Score Board');
+       document.querySelector('#display0').value= Resetbtn;
+       document.querySelector('#display').value= '';
+       document.querySelector('#display2').value= '';
+       ">Reset</button>
+       
+
+   <hr style="text-align: center; width: 50%; margin-top:100px; margin-bottom: 80px; ">
+   
+
+
+
+
+
+
+
+   <!-- Rock paper scissor -->
+   <div>
+     <h1 id="header">
+       2. Rock Paper Scisor Game
+     </h1>
+     <div>
+      <input class="sBoard" type="text" id="display01" placeholder="Score Board" readonly>
+    </div>
+     <br>
+     <h2 id="header">Choose any one of them.</h2>
+   
+   <div class="button-container">
+   <!-- 111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 -->
+     <button id="Stone" onclick="
+   
+   let ComChoice=RPSChoice();
+   // Here you can compare the value to the range of the data.
+     let result; 
+     if(ComChoice==='Scissor'){
+       result=(`'You won'`);
+       Score.Win++;
+     }
+     else if(ComChoice==='Paper'){
+       result=(`'You Lose'`);
+       Score.Lost++;
+     }
+     else if(ComChoice==='Rock'){
+       result=(`'It's a tie.'`);
+       Score.Tie++;
+     }
+     // this is a final result with in a one sentence.
+     let finalResult=(`'You have choosen Rock.' 'Computer choosen ${ComChoice}'`);
+     let resultMsg=(`Final result is  ${result}`);
+     let AllScore= board();
+   
+     // this is display, where result is display.
+     document.querySelector('#display3').value=finalResult;
+     document.querySelector('#display4').value=resultMsg;
+     document.querySelector('#display01').value=AllScore;
+     ">
+       Rock <img src="pngtree-cartoon-big-stone-png-image_8622445.png" alt="">
+     </button>
+   
+     <!-- 22222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222 -->
+   
+     <button id="Paper" onclick="
+     
+     let ComChoice=RPSChoice();
+   // Here you can compare the value to the range of the data.
+     let result; 
+     if(ComChoice==='Paper'){
+       result=(`'It's a tie.'`);
+       Score.Tie++;
+     }
+     else if(ComChoice==='Rock'){
+       result=(`'You Won'`);
+       Score.Win++;
+     }
+     else if(ComChoice==='Scissor'){
+       result=(`'You Lose'`);
+       Score.Lost++;
+     }
+     // this is a final result with in a one sentence.
+     let finalResult=(`'You have choosen Paper.' 'Computer choosen ${ComChoice}'`);
+     let resultMsg=(`Final result is  ${result}`);
+     let AllScore= board();
+     
+     // this is display, where result is display.
+     document.querySelector('#display3').value=finalResult;
+     document.querySelector('#display4').value=resultMsg;
+     document.querySelector('#display01').value=AllScore;
+     ">
+       Paper <img src="blank-white-paper-cartoon-clip-art-50953.png" alt="">
+     </button>
+   
+   
+   <!-- 333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333 -->
+   
+     <button id="scissor" onclick="
+     
+     let ComChoice=RPSChoice();
+   
+   // Here you can compare the value to the range of the data.
+     let result; 
+     if(ComChoice==='Rock'){
+       result=(`'You Lose'`);
+       Score.Lost++;
+     }
+     else if(ComChoice==='Scissor'){
+       result=(`'It's a tie.'`);
+       Score.Tie++;
+     }
+     else if(ComChoice==='Paper'){
+       result=(`'You won'`);
+       Score.Win++;
+     }
+     // this is a final result with in a one sentence.
+     let finalResult=(`'You have choosen Scissor.' 'Computer choosen ${ComChoice}'`);
+     let resultMsg=(`Final result is  ${result}`);
+     let AllScore= board();
+     // this is display, where result is display.
+     document.querySelector('#display3').value=finalResult;
+     document.querySelector('#display4').value=resultMsg;
+     document.querySelector('#display01').value=AllScore;
+     ">
+       Scissor <img src="pngtree-scissors-vector-cartoon-illustration-png-image_7650945.png" alt="">
+     </button>
+   
+   </div>
+   
+   
+   <h2 style="margin-left:15%;">Your result :-</h2>
+   <div>
+     <input type="text" id="display3" readonly>
+   </div>
+   <div>
+     <input type="text" id="display4" readonly>
+   </div>
+
+   <button style="margin-left:45% ;" onclick="
+       scoreReset();
+       let Resetbtn=('Score Board');
+       document.querySelector('#display01').value= Resetbtn;
+       document.querySelector('#display3').value= '';
+       document.querySelector('#display4').value= '';
+       ">Reset</button>
+         
+   </div>
+   
+   <hr style="text-align: center; width: 50%; margin-top:100px;  ">
+   
+   
+   
+   
+   
+   <hr style="text-align: center; width: 50%; margin-top:100px;  ">
+   
+   
+   </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <script src="FunkyGames.js"> </script>
+</body>
+</html>
