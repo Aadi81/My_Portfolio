@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<link rel="stylesheet" href="ColorT.css">
+
+<body>
+    
+ 
+    <h1 style="text-decoration: underline;">Ticket Counter</h1> 
+     <h2>Choose the correct option below &#x1F447;</h2>
+      <div class="option=container" style="font-size: 30px; color: rgb(0, 81, 255); font-weight: 600;"> 
+      <span style="font-size: 30px; color: rgb(255, 0, 0);" >Female</span>  Eligible for Schemes :-
+
+      <select name="select" id="option" onclick="optionDisplay2()" style="width: 30%; height: 35px; font-size: 20px; border: 3px solid rgb(110, 183, 0); border-radius: 15px; background-color: rgb(190, 255, 250); text-align: center; ">
+
+        <option style="text-align: center;" value="Default" selected="selected">-:Default:-</option>
+        <option  value="Not Eligible" onclick="
+        ">Not Eligible </option>
+        <option  value="Age Less then 5 year">Age Less then 5 year</option>
+        <option  value="Age between 5 to 18 year">Age between 5 to 18 year</option>
+        <option  value="Age Greater than 60 year">Age Greater than 60 year</option>
+
+    </select>
+
+
+      </div>
+       <div style="margin-top: 30px;">
+         <table border="" width="50%" style="border: solid rgb(255, 255, 255); text-align: left; box-shadow: 0px 0px 4px 4px rgb(75, 75, 75); text-shadow: 2px 2px 2px rgb(255, 255, 255); margin: auto; font-size: 19px;">
+           <tbody>
+               <tr style="text-align: center;">
+                   <th>Gender</th>
+                   <th>Schemes</th>
+               </tr>
+               <tr>
+                   <th>Male fee = 100-/</th>
+                   <th>
+                       <ul>
+                          <li>Smaller than 5 year, fees=0.</li>
+                          <li>Greater then 5 year or smaller then 18 year, fees=20.</li>
+                          <li>Greater than 60 year, fees = 5.</li>
+                       </ul>
+                   </th>
+               </tr>
+               <tr>
+                   <th>Female fee = 50-/</th>
+                   <th>
+                       <ul>
+                          <li>Smaller than 5 year, fees=0.</li>
+                          <li>Greater then 5 year or smaller then 18 year, fees=10.</li>
+                          <li>Greater than 60 year, fees = 0.</li>
+                       </ul>
+                   </th>
+               </tr>
+               <tr>
+                   <th>Other fee = 5-/</th>
+                   <th>
+                       <ul>
+                          <li>Smaller than 5 year, fees=0.</li>
+                          <li>Greater than 5 year, fees=5.</li>
+                         
+                       </ul>
+                   </th>
+               </tr>
+           </tbody>
+
+         </table>
+       </div>
+       <div>
+        <input class="Show-cmnt" type="text" id="display" readonly>
+       </div>
+
+       
+     
+     <div style="margin:auto; margin-top: 30px;">
+        <span style="font-size: 35px;">Fee Amount:- ₹</span> 
+        <input class="Show-amnt" type="text" id="AmtDisplay" readonly>
+        <br>
+     </div>
+     <div> 
+        <button class="pay"  onclick="
+          alert('Payment Done. Thank You.')
+          ">Pay
+        </button>
+     </div>
+
+   <div style="margin-top: 30px;">
+     
+        
+         <a class="resetBack-btn" href="indexT.html">
+         Back
+         </a>
+        
+      
+        
+            <a class="resetBack-btn" href="Female.html">Reset</a>
+         
+      
+    
+   </div>
+   
+ 
+   <footer style="margin-top: 5.5rem;">
+    &COPY;  Aditya Asthana 2025.
+    <br>
+   <h3>Ticket Counter</h3> 
+</footer>
+<script src="indexT.js"></script>
+</body>
+</html>

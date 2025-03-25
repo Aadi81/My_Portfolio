@@ -1,0 +1,165 @@
+/* h1{ 
+    text-align: center;
+}
+#calculator{
+    border: 20px solid rgb(71, 71, 71);
+    width: 483px;
+    height: 500px;
+    background-color: rgb(176, 176, 176);
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#display{
+    width:95.5%;
+    height: 60px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 8px;
+    display: flex;
+    align-self:center ;
+    background-color: rgb(255, 255, 255);
+    font-size: 37px;
+    
+}
+#button-container {
+    
+    /* display: flex; 
+    justify-content: center;
+    flex-wrap: wrap;
+    margin:5px;
+    padding: 5px;
+
+}
+
+#button-container button{
+    height:53px;
+    width: 55px;
+    margin: 8px;
+    padding:0;
+    text-align: center;
+    font-weight: 600;
+    font-size:25px ;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px  rgb(255, 150, 150);
+
+}
+#button-container button:hover {
+    background-color: white;
+    color: black;
+}
+ */
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-image: linear-gradient(180deg, 
+     rgba(0, 255, 221, 0.687) 0%, 
+     rgba(225, 188, 2, 0.817) 100%);
+}
+.button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+}
+.male {
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 15px;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    margin: 15px;
+    font-size: 40px;
+    padding: 5px;
+}
+.male:hover{
+    border: 2px solid white;
+    color: white;
+    background-color: rgb(0, 81, 255);
+}
+.Female {
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 15px;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    margin: 15px;
+    font-size: 40px;
+    padding: 5px;
+}
+.Female:hover{
+    border: 2px solid white;
+    color: white;
+    background-color: rgb(255, 0, 132);
+}
+.other{
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 15px;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    margin: 15px;
+    font-size: 40px;
+    padding: 5px;
+}
+.other:hover{
+    border: 2px solid white;
+    color: white;
+    background-color: rgb(255, 132, 0);
+}
+.Show-cmnt{
+    text-align: center;
+    border: 1px solid red;
+    border-radius: 15px;
+    font-size: 30px;
+    margin-top: 20px;
+    width: 30rem;
+    height: 4rem;
+}
+.Show-amnt{
+    background-color: transparent; 
+    color: white; 
+    text-shadow: 2px 2px 2px black; 
+    border:none; 
+    height: 2rem; 
+    width: 130px; 
+    font-size:35px;
+}
+
+.resetBack-btn {
+         text-decoration: none;
+         border: 2px solid black;
+         border-radius: 15px;
+         background-color: rgb(255, 255, 255);
+         font-size: 30px;
+         padding: 8px;
+         color: black;
+         margin:3rem;
+         
+}
+.resetBack-btn:hover{
+    background-color: rgb(67, 154, 0);
+    color: white;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 2px 2px 2px black;
+}
+.pay{
+    background-color: rgb(214, 214, 214);
+    margin-top: 30px; 
+    width: 10rem; 
+    font-size: 25px; 
+    color: rgb(0, 0, 0); 
+    border-radius: 15px;
+}
+.pay:hover{
+    background-color: rgb(42, 131, 255);
+    color: white;
+    box-shadow: 2px 2px 2px black;
+}
