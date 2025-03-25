@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Detection</title>
+   
+
+   <style>
+         body{
+            margin:0;
+            padding:0;
+         }
+         h1{
+            text-align: center;
+            margin-bottom: 2em;
+         }
+         .dtable{
+            margin: auto;
+            margin-bottom: 2em;
+         }
+         .center{
+            text-align:left;
+            font-size: 25px;
+            margin: 25px;
+         }
+        .footer {
+            background-color: #222222;
+            color: #fff;
+            text-align: center;
+            padding: 35px;
+            position:relative;
+            bottom: 0;
+            max-width: 100%;
+            font-size: 16px;
+            margin-bottom: 0px;
+        }
+
+        .footer a {
+            color: #00c3ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        @media screen and (max-width: 468px) {
+            .footer{
+                max-width: 100%;
+                font-size: 16px;
+            }           
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to OpenCV Color Detection</h1>
+   <table class="dtable" style="width: 500px; border: 1px solid rgb(204, 204, 204); padding: 5px; margin-bottom: 5px; color: rgb(34, 34, 34); font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 16px;">
+	<thead>
+		<tr>
+			<th style="position: sticky; top: 0px; background: rgb(224, 224, 224); border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px; font-weight: normal; text-align: center;">Color</th>
+			<th style="position: sticky; top: 0px; background: rgb(224, 224, 224); border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px; font-weight: normal; text-align: center;">HTML / CSS Name</th>
+			
+			<th style="position: sticky; top: 0px; background: rgb(224, 224, 224); border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px; font-weight: normal; text-align: center;">Decimal Code
+			<p style="line-height: 1.8; margin-top: 2px; margin-bottom: 2px;">(R,G,B)</p>
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px; width: 90px; background: rgb(0, 0, 0);">&nbsp;</td>
+			<td style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px;">Black</td>
+			
+			<td style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px;">(0,0,0)</td>
+		</tr>
+		<tr>
+			<td style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px; width: 90px; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">&nbsp;</td>
+			<td style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px;">White</td>
+			
+			<td style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px;">(255,255,255)</td>
+		</tr>
+		<tr>
+			<td style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px; width: 90px; background: rgb(255, 0, 0);">&nbsp;</td>
+			<td style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px;">Red</td>
+			
+			<td style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px;">(255,0,0)</td>
+		</tr>
+		<tr>
+			<td style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px; width: 90px; background: rgb(0, 255, 0);">&nbsp;</td>
+			<td style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px;">Lime</td>
+			
+			<td style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px;">(0,255,0)</td>
+		</tr>
+		<tr>
+			<td style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px; width: 90px; background: rgb(0, 0, 255);">&nbsp;</td>
+			<td style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px;">Blue</td>
+			
+			<td style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px;">(0,0,255)</td>
+		</tr>
+		<tr>
+			<td style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px; width: 90px; background: rgb(255, 255, 0);">&nbsp;</td>
+			<td style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px;">Yellow</td>
+			
+			<td style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px;">(255,255,0)</td>
+		</tr>
+		<tr>
+			<td style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px; width: 90px; background: rgb(0, 255, 255);">&nbsp;</td>
+			<td style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px;">Cyan / Aqua</td>
+			
+			<td style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px;">(0,255,255)</td>
+		</tr>
+		<tr>
+			<td style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px; width: 90px; background: rgb(255, 0, 255);">&nbsp;</td>
+			<td style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px;">Magenta / Fuchsia</td>
+			
+			<td style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px;">(255,0,255)</td>
+		</tr>
+		<tr>
+			<td style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px; width: 90px; background: rgb(192, 192, 192);">&nbsp;</td>
+			<td style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px;">Silver</td>
+			
+			<td style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px;">(192,192,192)</td>
+		</tr>
+		<tr>
+			<td style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px; width: 90px; background: rgb(128, 128, 128);">&nbsp;</td>
+			<td style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px;">Gray</td>
+			
+			<td style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px;">(128,128,128)</td>
+		</tr>
+		<tr>
+			<td style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px; width: 90px; background: rgb(128, 0, 0);">&nbsp;</td>
+			<td style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px;">Maroon</td>
+			
+			<td style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px;">(128,0,0)</td>
+		</tr>
+		<tr>
+			<td style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px; width: 90px; background: rgb(128, 128, 0);">&nbsp;</td>
+			<td style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px;">Olive</td>
+			
+			<td style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px;">(128,128,0)</td>
+		</tr>
+		<tr>
+			<td style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px; width: 90px; background: rgb(0, 128, 0);">&nbsp;</td>
+			<td style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px;">Green</td>
+			
+			<td style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px;">(0,128,0)</td>
+		</tr>
+		<tr>
+			<td style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px; width: 90px; background: rgb(128, 0, 128);">&nbsp;</td>
+			<td style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px;">Purple</td>
+			
+			<td style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px;">(128,0,128)</td>
+		</tr>
+		<tr>
+			<td style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px; width: 90px; background: rgb(0, 128, 128);">&nbsp;</td>
+			<td style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px;">Teal</td>
+			
+			<td style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px;">(0,128,128)</td>
+		</tr>
+		<tr>
+			<td style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px; width: 90px; background: rgb(0, 0, 128);">&nbsp;</td>
+			<td style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px;">Navy</td>
+			
+			<td style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; padding: 5px;">(0,0,128)</td>
+		</tr>
+	</tbody>
+</table>
+    <p class="center">
+       This is the OpenCV Python code, where we can detect the color by giving input value (color code), and it detect the color according to the given color.
+    </p>
+    <div class="center">
+        To see the output of the program, you can copy from it and run on your system.
+        Before going further some important point that you have to be noted before running the program as given below-
+        <ul>
+            <li>Install cv2 on your system.</li>
+            <li>Install pillow package on your system.</li>
+            <li>Install Numpy libraries.</li>
+            <li>Then, copy the python code and run.</li>
+            <li><b>Get the color code from the above chart.</b></li>
+        </ul>
+        </div>
+        <br>
+ <pre>
+    //code//
+              
+    import cv2
+    from PIL import Image
+    
+    from util import get_limits
+    ##################################################
+    object_color = input('Enter name of color')
+    
+    n = 3
+    print("Acoording to the color name ,
+    enter the three colors code no. (from 0 to 255) search on browser")
+    colorBoxlst = []  
+    
+    for i in range(n):
+        element = int(input(f"Enter element {i+1}: "))  
+        colorBoxlst.append(element)  
+    
+    print("Your list:", colorBoxlst)
+    ############################################################
+    #green = [0, 255, 0]  # yellow in BGR colorspace
+    
+    cap = cv2.VideoCapture(0)
+    while True:
+        ret, frame = cap.read()
+    
+        hsvImage = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
+    
+        lowerLimit, upperLimit = get_limits(color=colorBoxlst) ###
+    
+        mask = cv2.inRange(hsvImage, lowerLimit, upperLimit)
+    
+        mask_ = Image.fromarray(mask)
+    
+        bbox = mask_.getbbox()
+    
+        if bbox is not None:
+            x1, y1, x2, y2 = bbox
+    
+            frame = cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 5)
+    
+        cv2.imshow('frame', frame)
+    
+        if cv2.waitKey(1) & 0xFF == ord('e'):
+            break
+    
+    cap.release()
+    
+    cv2.destroyAllWindows()
+
+
+ </pre>
+  <div class="center">This is another python file, which is save separetely on your system, don't merge it. </div>
+  <pre>
+    //code//
+
+    import numpy as np
+    import cv2
+    
+    def get_limits(color):
+        c = np.uint8([[color]])  # BGR values
+        hsvC = cv2.cvtColor(c, cv2.COLOR_BGR2HSV)
+    
+        hue = hsvC[0][0][0]  # Get the hue value
+    
+        # Handle red hue wrap-around
+        if hue >= 165:  # Upper limit for divided red hue
+            lowerLimit = np.array([hue - 10, 100, 100], dtype=np.uint8)
+            upperLimit = np.array([180, 255, 255], dtype=np.uint8)
+        elif hue <= 15:  # Lower limit for divided red hue
+            lowerLimit = np.array([0, 100, 100], dtype=np.uint8)
+            upperLimit = np.array([hue + 10, 255, 255], dtype=np.uint8)
+        else:
+            lowerLimit = np.array([hue - 10, 100, 100], dtype=np.uint8)
+            upperLimit = np.array([hue + 10, 255, 255], dtype=np.uint8)
+    
+        return lowerLimit, upperLimit
+  </pre>
+
+<footer class="footer">
+        &copy; 2025 <a href="" target="_blank">Aditya Asthana</a>. All rights reserved.
+    </footer>
+</body>
+</html>
