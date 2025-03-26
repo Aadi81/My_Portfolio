@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -382,7 +383,7 @@ label{
   }
   .container1{
     width: 600px;
-    height: 1200px;
+    height: 1600px;
     padding: 5px 5px;
     margin-left: 120px;
     margin-top: 15px;
@@ -458,14 +459,23 @@ label{
 .progress-line.react span{
     width: 60%;
 }
+.progress-line.redux span{
+    width: 50%;
+}
 .progress-line.boot span{
     width: 60%;
 }
-.progress-line.django span{
-    width: 40%;
+.progress-line.mongodb span{
+    width: 60%;
 }
 .progress-line.python span{
     width: 50%;
+}
+.progress-line.API span{
+    width: 80%;
+}
+.progress-line.AWS span{
+    width: 70%;
 }
 .progress-line.node span{
     width: 70%;
@@ -477,6 +487,9 @@ label{
     width: 80%;
 }
 .progress-line.wordpress span{
+    width: 65%;
+}
+.progress-line.Figma span{
     width: 80%;
 }
 .progress-line span::after{
@@ -505,14 +518,23 @@ label{
 .progress-line.react span::after{
     content: "60%";
 }
+.progress-line.redux span::after{
+    content: "50%";
+}
 .progress-line.boot span::after{
     content: "60%";
 }
-.progress-line.django span::after{
-    content: "40%";
+.progress-line.mongodb span::after{
+    content: "60%";
 }
 .progress-line.python span::after{
     content: "50%";
+}
+.progress-line.API span::after{
+    content: "80%";
+}
+.progress-line.AWS span::after{
+    content: "70%";
 }
 .progress-line.node span::after{
     content: "70%";
@@ -524,6 +546,9 @@ label{
     content: "80%";
 }
 .progress-line.wordpress span::after {
+    content: "65%";
+}
+.progress-line.Figma span::after {
     content: "80%";
 }
 .progress-line span::before{
@@ -596,6 +621,10 @@ label{
 .path-4{animation: aniamte-path4 1s 1s linear forwards;}
 .path-5{animation: aniamte-path5 1s 1s linear forwards;}
 .path-6{animation: aniamte-path6 1s 1s linear forwards;}
+.path-7{animation: aniamte-path7 1s 1s linear forwards;}
+.path-8{animation: aniamte-path8 1s 1s linear forwards;}
+.path-9{animation: aniamte-path9 1s 1s linear forwards;}
+.path-10{animation: aniamte-path10 1s 1s linear forwards;}
 
 @keyframes aniamte-path1{
     100%{
@@ -619,12 +648,32 @@ label{
 }
 @keyframes aniamte-path5{
     100%{
-        stroke-dashoffset: 505;
+        stroke-dashoffset: 140;
     }
 }
 @keyframes aniamte-path6{
     100%{
-        stroke-dashoffset: 505;
+        stroke-dashoffset: 90;
+    }
+}
+@keyframes aniamte-path7{
+    100%{
+        stroke-dashoffset: 70;
+    }
+}
+@keyframes aniamte-path8{
+    100%{
+        stroke-dashoffset: 140;
+    }
+}
+@keyframes aniamte-path9{
+    100%{
+        stroke-dashoffset: 130;
+    }
+}
+@keyframes aniamte-path10{
+    100%{
+        stroke-dashoffset: 160;
     }
 }
 
