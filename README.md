@@ -4,7 +4,7 @@ This is a personal portfolio website developed using **HTML**, **CSS**, and **Ja
 
 ## Live Demo
 
-[View Portfolio Live](https//:aadi81.github.io/My_Portfolio/) 
+[View Portfolio Live](https://aadi81.github.io/My_Portfolio/) 
 
 ## About the Project
 
