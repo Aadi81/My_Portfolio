@@ -1,38 +1,54 @@
-var typed = new Typed(".change", {
-    strings: ["Full-Stack Developer", "UI/UX Designer", 
-        "WordPress Developer", "Python Coder", "AI / ML Enthusiast", "Learner" ],
-    typeSpeed: 100,
-    backSpeed: 50,
-    backDelay:1000,
-    loop: true
-});
 
+document.addEventListener("DOMContentLoaded", function () {
+    // Typed.js setup
+    if (document.querySelector(".change")) {
+        new Typed(".change", {
+            strings: [
+                "Full-Stack Developer",
+                "UI/UX Designer",
+                "WordPress Developer",
+                "Python Coder",
+                "AI / ML Enthusiast",
+                "Learner"
+            ],
+            typeSpeed: 100,
+            backSpeed: 50,
+            backDelay: 1000,
+            loop: true
+        });
+    }
 
+    // Menu toggle
+    const menuIcon = document.querySelector('#menu-icon');
+    const navbar = document.querySelector('.navbar');
 
+    if (menuIcon && navbar) {
+        menuIcon.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+            menuIcon.classList.toggle('bx-x');
+        });
+    }
 
-let menuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
-let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header nav a');
+    // ScrollSpy Active Link
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('header nav a');
 
-window.onscroll = () => {
-    sections.forEach(sec =>{
+    window.addEventListener("scroll", () => {
         let top = window.scrollY;
-        let offset = sec.offsetTop - 150;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute('id');
 
-        if(top >= offset &&  top < offset + height){
-            navLinks.forEach(links => {
-                links.classList.remove('active');
-                document.querySelector('header nav a [href*=' + id + ']').classList.add('active')
-            })
+        sections.forEach((sec) => {
+            let offset = sec.offsetTop - 150;
+            let height = sec.offsetHeight;
+            let id = sec.getAttribute("id");
+
+            if (top >= offset && top < offset + height) {
+                navLinks.forEach((link) => {
+                    link.classList.remove("active");
+                });
+
+                const targetLink = document.querySelector(`header nav a[href*="${id}"]`);
+                if (targetLink) targetLink.classList.add("active");
             }
-        })
-    }
-    menuIcon.onclick = () => {
-        menuIcon.classList.toggle('bx-x');
-        navbar.classList.toggle('active');
-    }
-
-    
+        });
+    });
+});
