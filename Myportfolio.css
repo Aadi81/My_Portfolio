@@ -1015,66 +1015,65 @@ opacity: 0;
         
     }
 }
+
 @media(max-width:895px){
-    #menu-icon{
-        font-size: 3.6rem;
-        color: var(--main-color);
-        display:none;
+    #menu-icon {
+        display: block;
         cursor: pointer;
+        z-index: 1001;
     }
-    .navbar{
+
+    .navbar {
         position: absolute;
         top: 100%;
         right: 0;
         width: 100%;
-        padding: 0.1rem 3%;
-        background: rgba(0, 0, 0,0.8);
+        background: rgba(0, 0, 0, 0.8);
         backdrop-filter: blur(20px);
-        border-bottom-left-radius:2rem ;
-        border-bottom-right-radius:2rem ;
-        border-left: 2px solid var(--main-color);
-        border-bottom: 2px solid var(--main-color);
-        border-right: 2px solid var(--main-color);
-        border-top: 2px solid var(--main-color);
-        display:flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    .navbar.active{
+        border-radius: 0 0 2rem 2rem;
+        border: 2px solid var(--main-color);
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0;
         display: none;
-        color: var(--main-color);
+        z-index: 1000;
     }
-    
-    .navbar a{
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar a {
         display: block;
-        font-size: 3rem;
-        margin: 2rem 0;
-        color: white;
+        font-size: 2.4rem;
+        margin: 1.5rem 0;
+        color: var(--text-color);
     }
-    .home{
+
+    .home {
         flex-direction: column-reverse;
         margin: 20rem 4rem;
-
     }
-    .home-content h3{
+
+    .home-content h3 {
         font-size: 2.6rem;
     }
-    .home-content h1{
+
+    .home-content h1 {
         font-size: 8rem;
         margin-top: 3rem;
     }
-    .home-content p{
+
+    .home-content p {
         max-width: 600px;
-        margin-top: 0 auto ;
+        margin: 0 auto;
     }
-    .home-img img{
-        
+
+    .home-img img {
         width: 56vw;
     }
-    .services{
-        margin-bottom: 3rem;
-    }
-    .services-container{
-        grid-template-columns: repeat(1,1fr);
+
+    .services-container {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
