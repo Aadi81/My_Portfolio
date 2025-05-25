@@ -11,10 +11,26 @@
 }
 :root{
     --bg-color:#000000;
-    --second-bg-color:#131313;
+    --second-bg-color:#121212;
     --text-color:white;
     --main-color:#ffae00;
 }
+
+/* Adding dark mode  */
+body.light-mode {
+  --bg-color: #ffffff;
+  --second-bg-color: #8789c5;
+  --text-color: #000000;
+  --main-color: #1500ff;
+}
+#theme-toggle {
+    font-size: 2.8rem;
+    color: var(--main-color);
+    cursor: pointer;
+    margin-left: 2rem;
+    transition: 0.3s ease-in-out;
+}
+
 
 html{
     font-size: 60%;
@@ -39,6 +55,9 @@ body{
     align-items: center;
     z-index: 5;
 }
+
+
+
 
 .logo{
     font-size: 3rem;
@@ -72,6 +91,7 @@ body{
     display: none;
 
 }
+
 section{
     min-height:100vh ;
     padding: 10rem 12% 10rem;
@@ -228,12 +248,12 @@ span{
 .about-text h4{
     font-size: 29px;
     font-weight: 600;
-    color: white;
+    color: var(--text-color);
     line-height: 1.7;
     margin: 15px 0 30px;
 }
 .about-text p{
-    color: aliceblue;
+     color: var(--text-color);
     font-size: 20px;
     line-height: 1.4;
     margin-bottom: 4rem;
@@ -327,7 +347,7 @@ label{
 .timeline-date{
     font-size: 20px;
     font-weight: 800;
-    color: white;
+     color: var(--text-color);
     margin: 6px 0 15px ;
 
 }
@@ -349,13 +369,13 @@ label{
 
 .timeline-content h3{
     font-size: 20px ;
-    color: white;
+     color: var(--text-color);
     margin: 0 0 10px;
     font-weight: 500;
 
 }
 .timeline-content p{
-    color: white;
+     color: var(--text-color);
     font-size: 16px;
     font-weight: 300;
     line-height: 22px;
@@ -496,7 +516,7 @@ label{
     position: absolute;
     padding: 1px 8px;
     background-color:var(--bg-color);
-    color: white;
+     color: var(--text-color);
     font-size: 12px;
     border-radius: 3px;
     top: -28px;
@@ -686,6 +706,7 @@ font-size: 17px;
 font-weight: 500;
 animation: showText 0.5s 1s linear forwards;
 opacity: 0;
+ color: var(--text-color);
 }
 
 .radial-bar .text{
@@ -698,6 +719,7 @@ opacity: 0;
     font-weight: 500;
     animation: showText 0.5s 1s linear forwards;
     opacity: 0;
+     color: var(--text-color);
 }
 
 
@@ -866,7 +888,7 @@ opacity: 0;
 .contact h2{
     margin-top: 0px;
     margin-bottom: 3rem;
-    color: white;
+    color: var(--text-color);
 }
 .contact form{
     display: flex;
@@ -905,7 +927,7 @@ opacity: 0;
    font-size: 50px;
 }
 .footer .what a{
-    color: #ffae00;
+     color: var(--text-color);
     font-size: 25px;
     text-align: center;
     text-decoration: underline;
@@ -981,8 +1003,9 @@ opacity: 0;
     }
     section{
         margin-top: 20rem ;
-       padding: 3rem 5% 2rem;
+        padding: 3rem 5% 2rem;
       /*position: relative;*/
+
     
         
     }
@@ -1015,6 +1038,7 @@ opacity: 0;
         
     }
 }
+
 
 @media(max-width:895px){
     #menu-icon {
@@ -1050,11 +1074,12 @@ opacity: 0;
         color: var(--text-color);
     }
 
-  .home {
+     .home {
     flex-direction: column-reverse;
     margin: 10rem 2rem 5rem; /* reduced top margin */
     gap: 4rem; /* reduced gap between image and content */
-   }
+}
+
 
     .home-content h3 {
         font-size: 2.6rem;
@@ -1078,3 +1103,8 @@ opacity: 0;
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
+
+
+
+
