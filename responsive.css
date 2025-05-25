@@ -618,7 +618,6 @@
 
 }
 
-
 @media screen and (max-width: 480px) {
     .hero {
         padding: 44px 0 82px 0;
@@ -681,3 +680,83 @@
         padding: 12px 26px 12px 26px !important;
     }
 }
+
+
+/* Responsive fix for header logo */
+@media (max-width: 768px) {
+  .navbar-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .navbar-logo img {
+    max-width: 270px;
+    height: auto;
+  }
+
+  .navbar-logo h2 {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  .navbar-nav #homes{
+    font-weight: 600;
+    font-size:50px ;
+
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .center-data {
+    margin-top: -10px;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .center-data h1 {
+    font-size: 40px !important;
+    text-shadow: 0px 0px 60px rgb(255, 0, 208);
+    cursor: pointer; 
+  }
+
+  .center-data h3 {
+    font-size: 18px !important;
+    margin-top: 10px;
+    padding: 0 10px;
+  }
+
+  .center-btn {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 25px;
+  }
+
+  .center-btn a {
+    font-size: 16px !important;
+    padding: 10px 25px !important;
+    width: 80%;
+    max-width: 300px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .center-data h1 {
+    font-size: 30px !important;
+  }
+
+  .center-data h3 {
+    font-size: 16px !important;
+  }
+
+  .center-btn a {
+    font-size: 14px !important;
+    padding: 10px 20px !important;
+  }
+}
+
+
