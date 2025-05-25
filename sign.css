@@ -1,0 +1,230 @@
+  /* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(to right, #410101, #696969);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Container */
+  .container {
+    background: #ffffff00;
+    border-radius: 10px;
+    box-shadow: 0 24px 38px rgba(0, 0, 0, 0.616),
+                0 24px 38px rgba(0, 0, 0, 0.55);
+    position: relative;
+    overflow: hidden;
+    width: 800px;
+    max-width: 100%;
+    min-height: 500px;
+    display: flex;
+  }
+  
+  /* Form Containers */
+  .form-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 0 50px;
+    background: linear-gradient(to right,rgb(208, 0, 255), #3c013f);
+  }
+  
+  .sign-in-container {
+    left: 0;
+    z-index: 2;
+  }
+  
+  .sign-up-container {
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+  }
+  
+  /* Overlay Logic */
+  .container.right-panel-active .sign-in-container {
+    transform: translateX(100%);
+  }
+  
+  .container.right-panel-active .sign-up-container {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+  }
+  
+  .overlay-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+    z-index: 100;
+  }
+  
+  .container.right-panel-active .overlay-container {
+    transform: translateX(-100%);
+  }
+  
+  .overlay {
+    background: linear-gradient(to right, #3c00ff00, #7b02a000);
+    color: white;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+  }
+  
+  .container.right-panel-active .overlay {
+    transform: translateX(50%);
+  }
+  
+  .overlay-panel {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+    text-align: center;
+    height: 100%;
+    width: 50%;
+  }
+  
+  .overlay-left {
+    transform: translateX(0);
+    left: 0;
+  }
+  
+  .overlay-right {
+    right: 0;
+    transform: translateX(0);
+  }
+  
+  button  {
+    border: none;
+    padding: 12px 45px;
+    background-color: #0072ff;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  button.ghost {
+    background-color: transparent;
+    border: 2px solid white;
+    margin-top: 25px;
+  }
+  button.ghost:hover{
+    text-shadow: 0px 0px 5px rgb(0, 0, 0);
+    border-color: #0072ff;
+    color: #ffffff;
+    
+    transition: transform 0.1s;
+    box-shadow:0 14px 8px rgba(0, 0, 0, 0.616),
+               0 14px 8px rgba(0, 0, 0, 0.55); 
+  }
+  
+  
+  button:hover {
+    transform: scale(1.05);
+   
+  }
+  
+  /* Inputs */
+  input {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+    border-radius: 4px;
+  }
+  
+  /* Password Field with Eye */
+  .password-field {
+    position: relative;
+    width: 100%;
+  }
+  
+  .password-field input {
+    padding-right: 40px;
+  }
+  
+  .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #666;
+    transition: transform 0.3s;
+  }
+  
+  .toggle-password.spin {
+    transform: translateY(-50%) rotate(180deg);
+  }
+  
+  /* Separator */
+  .separator {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    z-index: 5;
+    overflow: hidden;
+  }
+  
+  .separator-inner {
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, #ff0000 0%, #fff700 100%);
+    animation: moveSeparator 3s linear infinite;
+  }
+  
+  @keyframes moveSeparator {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(100%);
+    }
+  }
+  
+  /* Messages */
+  .message {
+    font-size: 0.8em;
+    margin-top: 5px;
+    display: none;
+  }
+  
+  .message.error {
+    color: red;
+  }
+  
+  .message.success {
+    color: green;
+  }
+
+  #anchor{
+    color: white;
+  }
