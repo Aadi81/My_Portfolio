@@ -18,17 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Menu toggle
-    const menuIcon = document.querySelector('#menu-icon');
-    const navbar = document.querySelector('.navbar');
-
-    if (menuIcon && navbar) {
-        menuIcon.addEventListener('click', () => {
-            navbar.classList.toggle('active');
-            menuIcon.classList.toggle('bx-x');
-        });
-    }
-
     // ScrollSpy Active Link
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('header nav a');
