@@ -20,7 +20,10 @@
 
         <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Sixtyfour&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Akronim&family=Aladin&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Rubik+Glitch+Pop&display=swap" rel="stylesheet">
-         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
 </head>
 
 <body>
@@ -30,22 +33,28 @@
             <!-- ====== 1.1. Header section ====== -->
             <header>
                 <nav class="container navbar">
-                    <div class="container-nav flex">
-                        <!-- site logo -->
-                        <a class="navbar-logo" href="">
-                       
-                        <img src="logo2.png" alt="logo"></a>
-                       <!-- <button class="navbar-toggler" onclick="openNav()" type="button">
-                            <span class="fa-solid fa-bars"></span>
-                        </button>-->
-                        <!-- menus -->
-                        <ul class="navbar-nav flex">
-                            <li><a class="nav-link active" href="/">Home</a></li>
+
+                  <div class="container-nav flex">
+                          <!-- Logo -->
+                         <a class="navbar-logo" href="">
+                           <img src="logo2.png" alt="logo">
+                         </a>
+                            
+                     <!-- Navigation Links -->
+                      <ul class="navbar-nav flex" id="mobile-menu">
+                            <li><a id="homes" class="nav-link active" href="/">Home</a></li>
                             <li><a class="nav-link" href="#about1">About</a></li>
                             <li><a class="nav-link" href="#team1">Mentor</a></li>
                             <li><a class="nav-link" href="#FAQ1">FAQ</a></li>
-                        </ul>
-                   </div>
+
+                         <!-- Add more links if needed -->
+                      </ul>
+                 </div>
+
+
+
+</div>
+
                     
                     
                 </nav>
@@ -54,7 +63,7 @@
             <!-- ====== End of 1.1. Header section ====== -->
             <!-- ====== 1.2. hero section ====== -->
             <section class="hero" >
-              
+             
                 <div class="container" data-aos="zoom-in">
                     <div>
                         <div class="hero-social-icon flex">
@@ -70,21 +79,33 @@
                            
                             <h3 style="color: white; font-size: 30px; margin-top: 20px; font-family:Verdana, Geneva, Tahoma, sans-serif;"><u>
                                 Virtually  Try-On  System </u></h3>
-                            
-                            <div class="center-btn flex"> 
+                             
+                                <div class="center-btn flex"> 
                                 <a href="cam2.html" class="btn_hover1">Open Camera </a>                  
                                 <a href="Upload.html" class="btn_hover2">Upload Photo</a>
                             </div>
-                           <div class="center-btn flex">
+                            <div class="center-btn flex">
                                 <a href="signup-in.html" class="btn_hover1">Sign up/Log in
-                                </a>                
+                                </a>                  
+                    
                             </div>
-                         </div>
                         </div>
+                     <!-- <div class="mydata"> 
+                        <h3 style="color: white; font-size: 30px; margin-top: 20px; font-family:Verdana, Geneva, Tahoma, sans-serif;"><u>Virtually  Try-On  System </u></h3>
+                        <div class="center-btn flex">
+                            <a href="camera.html" class="btn_hover1">Open Camera </a>                  
+                            <a href="Upload.html" class="btn_hover2">Upload Photo</a>
+                        </div>
+                        <div class="center-btn flex">
+                            <a href="#" class="btn_hover1">Sign up
+                            </a>                  
+                            <a href="#" class="btn_hover2">Log In</a>
+                        </div>
+                      </div>   -->
                     </div>
-               
+                </div>
             </section>
-          
+            <!-- ====== End of 1.2. hero section ====== -->
         </div>
         
       
@@ -194,11 +215,11 @@
                 </div>
                 <div class="team-slider flex mt-15" data-aos="zoom-in">
                     <div class="team-img">
-                        <img src="IMG-20250122-WA0011.jpg" alt="Avatar">
+                        <img src="IMG-20250122-WA00111.jpg" alt="Avatar">
                         <div class="overlay">
                             <div class="overlay_text">
                                 <h3>Aditya Asthana</h3>
-                                <h4 style="color: rgb(246, 255, 0);">Full-Stack Developer</h4>
+                                <h4 style="color: rgb(0, 255, 221);">MERN-Stack Developer</h4>
                                 <div class="flex flex-center gap-1">
                                     <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                                     <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
@@ -208,11 +229,11 @@
                         </div>
                     </div>
                     <div class="team-img">
-                        <img src="IMG-20250122-WA0018.jpg" alt="Avatar">
+                        <img src="IMG-20250122-WA00181.jpg" alt="Avatar">
                         <div class="overlay">
                             <div class="overlay_text">
                                 <h3>Anshul Verma</h3>
-                                <h4 style="color: rgb(246, 255, 0);">SEO Expert</h4>
+                                <h4 style="color: rgb(0, 255, 221);">AI/ML Expert</h4>
                                 <div class="flex flex-center gap-1">
                                     <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                                     <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
@@ -222,11 +243,11 @@
                         </div>
                     </div>        
                     <div class="team-img">  
-                        <img src="IMG-20250122-WA0013.jpg" alt="Avatar">
+                        <img src="admin2.png" alt="Avatar">
                         <div class="overlay">
                             <div class="overlay_text">
-                                <h3>Er. Himanshu Shukla</h3>
-                                <h4 style="color: rgb(246, 255, 0);">Coordinator </h4> <br>
+                                <h3>Dr. Jaswant Singh</h3>
+                                <h4 style="color: rgb(0, 255, 221);">Project Guide </h4> <br>
                                 <h5>Assitant Professor, Computer Science Department</h5>
                                 
                                 <div class="flex flex-center gap-1">
@@ -238,12 +259,12 @@
                         </div>
                     </div>
                     <div class="team-img">
-                        <img src="IMG-20250122-WA0016.jpg" alt="Avatar">
+                        <img src="admin2.png" alt="Avatar">
                         <div class="overlay">
                             <div class="overlay_text">
-                                <h3>Er. Ravi Gupta</h3>
-                                <h4 style="color: rgb(246, 255, 0);"> Head Coordinator </h4>
-                                <h5>Head of Department, Computer Science Department</h5>
+                                <h3>Er. Akanksha Yadav</h3>
+                                <h4 style="color: rgb(0, 255, 221)">Project Co-ordinator </h4>
+                                <h5>Assitant Professor, Computer Science Department</h5>
                                 <div class="flex flex-center gap-1">
                                     <a href="#"><i class="fa-brands fa-facebook-f"></i></a> 
                                     <a href="#"><i class="fa-brands fa-whatsapp"></i></a> 
@@ -429,6 +450,10 @@
     <!-- button back to top -->
     <button onclick="scrollToTop()" id="backToTopBtn" class="btn_hover2"><i
             class="fa-solid fa-arrow-turn-up"></i></button>
+
+    <!-- <script>
+        alert('This AI-Wardobe web page. Made by Aditya Asthana.')
+    </script> -->
     
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
@@ -453,7 +478,7 @@
         integrity="sha256-DHF4zGyjT7GOMPBwpeehwoey18z8uiz98G4PRu2lV0A=" crossorigin="anonymous"></script>
 
     <!-- custom js -->
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 
