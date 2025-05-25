@@ -981,7 +981,7 @@ opacity: 0;
     }
     section{
         margin-top: 20rem ;
-        padding: 5rem 5% 2rem;
+       padding: 3rem 5% 2rem;
       /*position: relative;*/
     
         
@@ -1050,10 +1050,11 @@ opacity: 0;
         color: var(--text-color);
     }
 
-    .home {
-        flex-direction: column-reverse;
-        margin: 20rem 4rem;
-    }
+  .home {
+    flex-direction: column-reverse;
+    margin: 10rem 2rem 5rem; /* reduced top margin */
+    gap: 4rem; /* reduced gap between image and content */
+   }
 
     .home-content h3 {
         font-size: 2.6rem;
