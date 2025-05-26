@@ -47,7 +47,7 @@ const profileImg = document.getElementById("profile-img");
 
 // Set your light mode image path here
 const darkModeImg = "WhatsApp Image 2024-08-30 at 08.18.26_9c09f6a2.jpg";
-const lightModeImg = "light-img2.png"; // 🔁 Replace this with your light image filename
+const lightModeImg = "https://aadi81.github.io/My_Portfolio/light-img2.png"; // 🔁 Replace this with your light image filename
 
 // Load saved theme
 if (localStorage.getItem("theme") === "light") {
